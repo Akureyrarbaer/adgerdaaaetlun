@@ -3,8 +3,13 @@
 <head>
 <link href="http://www.akureyri.is/static/themes/2017/theme.css?v=83318b627e" rel="stylesheet" media="all" type="text/css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
+
+    .flex-parent {
+          counter-reset: outer-counter 0;      
+    }
 
     .flex-container {
   display: flex;
@@ -13,6 +18,7 @@
   justify-content: start;
   align-items: stretch;
   align-content: stretch;
+  counter-increment: outer-counter 1;
 }
 
 .flex-container-inner {
@@ -24,17 +30,32 @@
     align-content: stretch;
     height:100%;
     margin:-5px;
+    counter-reset: css-counter 0;
 }
 
 .flex-item {
       flex: 1 1 auto;
       margin:5px;
-    }
+}
 
     .flex-item-inner {
           flex: 1 1 auto;
           margin:5px;
           padding:10px;
+          counter-increment: css-counter 1;
+    }
+
+    .flex-item-inner:before {
+        content: counter(outer-counter) "." counter(css-counter) " ";
+        font-weight:bold;
+    }
+
+    .flex-item-inner a {
+        color:#000;
+    }
+
+    .flex-item-inner:hover {
+        opacity:90%;
     }
 
     .chapter-title {
@@ -44,6 +65,10 @@
         min-width:200px;
         max-width:200px;
         padding:10px;
+    }
+
+    .chapter-title:before {
+        content: counter(outer-counter) ". ";
     }
 
     .item-prepared {
@@ -57,107 +82,124 @@
     .item-finished {
         background-color: rgb(177, 214, 184);
     }
+
+    @media (max-width: 767px) {
+        .flex-container {
+            flex-wrap: wrap;
+            margin-bottom:30px;
+        }
+
+        .chapter-title {
+            min-width:100%;
+            max-width:100%;
+        }
+    }
+
     </style>
 </head>
 <body>
 
+<h2>47 aðgerðir Akureyrarbæjar í umhverfis- og loftslagsmálum 2024-2026</h2>
+
+<div class="legend">
+    
+</div>
+
+<div class="flex-parent">
 <div class="flex-container">
-    <div class="flex-item chapter-title">1. Hrein orka</div>
+    <div class="flex-item chapter-title">Hrein orka</div>
     <div class="flex-item">
         <div class="flex-container-inner">
-            <div class="flex-item-inner item-started">1.1 Vistvænni ferðir á vegum Akureyrarbæjar</div>
-            <div class="flex-item-inner item-started">1.2 Vistvænni mannvirkjagerð</div>
-            <div class="flex-item-inner item-started">1.3 Orka í samgöngum</div>
-            <div class="flex-item-inner item-prepared">1.4 Vistvænt eldsneyti</div>
-            <div class="flex-item-inner item-started">1.5 Orkuskipti í Grímsey</div>
-            <div class="flex-item-inner item-prepared">1.6 Rafvæðing hafna</div>
-            <div class="flex-item-inner item-prepared">1.7 Fjölorkustöðvar</div>
+            <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/1-hrein-orka#orka1" target="_blank">Vistvænni ferðir á vegum Akureyrarbæjar</a></div>
+            <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/1-hrein-orka#orka2" target="_blank">Vistvænni mannvirkjagerð</a></div>
+            <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/1-hrein-orka#orka3" target="_blank">Orka í samgöngum</a></div>
+            <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/1-hrein-orka#orka4" target="_blank">Vistvænt eldsneyti</a></div>
+            <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/1-hrein-orka#orka5" target="_blank">Orkuskipti í Grímsey</a></div>
+            <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/1-hrein-orka#orka6" target="_blank">Rafvæðing hafna</a></div>
+            <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/1-hrein-orka#orka7" target="_blank">Framtíð án jarðefnaeldsneytis</a></div>
         </div>
     </div>
 </div>
 
 <div class="flex-container">
-    <div class="flex-item chapter-title">2. Breyttar ferðavenjur</div>
+    <div class="flex-item chapter-title">Breyttar ferðavenjur</div>
     <div class="flex-item">
         <div class="flex-container-inner">
-                <div class="flex-item-inner item-started">2.1 Stuðla að vistvænum ferðavenjum starfsmanna og íbúa</div>
-                <div class="flex-item-inner item-finished">2.2. Nýtt stígakerfi</div>
-                <div class="flex-item-inner item-started">2.3 Samgöngur án einkabíls</div>
-                <div class="flex-item-inner item-finished">2.4 Þétting byggðar</div>
-                <div class="flex-item-inner item-finished">2.5 Upplýsingar og fræðsla</div>
-                <div class="flex-item-inner item-started">2.6 Lokun göngugötu og Listagils</div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/2-breyttar-ferdavenjur#ferdavenjur1" target="_blank">Vistvænar ferðavenjur</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/2-breyttar-ferdavenjur#ferdavenjur2" target="_blank">Nýtt stígakerfi</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/2-breyttar-ferdavenjur#ferdavenjur3" target="_blank">Samgöngur án einkabíls</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/2-breyttar-ferdavenjur#ferdavenjur4" target="_blank">Þétting byggðar</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/2-breyttar-ferdavenjur#ferdavenjur5" target="_blank">Upplýsingar og fræðsla</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/2-breyttar-ferdavenjur#ferdavenjur7" target="_blank">Lokun göngugötu og Listagils</a></div>
         </div>
     </div>
 </div>
 
 <div class="flex-container">
-    <div class="flex-item chapter-title">3. Úrgangs-<br />auðlindin</div>
+    <div class="flex-item chapter-title">Úrgangsauðlindin</div>
     <div class="flex-item">
         <div class="flex-container-inner">
-                <div class="flex-item-inner item-prepared">3.1. Græn innkaup Akureyrarbæjar</div>
-                <div class="flex-item-inner item-started">3.2 Efla viðhald og lagfæringar</div>
-                <div class="flex-item-inner item-started">3.3. Stofnun líforkuvers</div>
-                <div class="flex-item-inner item-finished">3.4 Evrópska nýtnivikan</div>
-                <div class="flex-item-inner item-started">3.5 Flokkun úrgangs og flokkunartunnur</div>
-                <div class="flex-item-inner item-prepared">3.6 Bæta flokkun úrgangs í íbúðum í skammtímaleigu</div>
-                <div class="flex-item-inner item-started">3.7 Draga úr matarsóun</div>
-                <div class="flex-item-inner item-prepared">3.8 Draga úr fatasóun</div>
-                <div class="flex-item-inner item-prepared">3.9 Auka neysluvitund íbúa</div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/3-urgangsaudlindin/#urgangur1" target="_blank">Græn innkaup Akureyrarbæjar</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/3-urgangsaudlindin/#urgangur2" target="_blank">Efla viðhald og lagfæringar</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/3-urgangsaudlindin/#urgangur4" target="_blank">Stofnun líforkuvers</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/3-urgangsaudlindin/#urgangur5" target="_blank">Evrópska nýtnivikan</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/3-urgangsaudlindin/#urgangur6" target="_blank">Flokkun úrgangs og flokkunartunnur</a></div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/3-urgangsaudlindin/#urgangur7" target="_blank">Bæta flokkun úrgangs í íbúðum í skammtímaleigu</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/3-urgangsaudlindin/#urgangur9" target="_blank">Draga úr matarsóun</a></div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/3-urgangsaudlindin/#urgangur10" target="_blank">Draga úr fatasóun</a></div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/3-urgangsaudlindin/#urgangur11" target="_blank">Auka neysluvitund íbúa</a></div>
         </div>
     </div>
 </div>
 
 <div class="flex-container">
-    <div class="flex-item chapter-title">4. Loftgæði &amp; heilsa</div>
+    <div class="flex-item chapter-title">Loftgæði &amp; heilsa</div>
     <div class="flex-item">
         <div class="flex-container-inner">
-                <div class="flex-item-inner item-finished">4.1 Loftslagsstefna Akureyrarbæjar</div>
-                <div class="flex-item-inner item-started">4.2 Draga úr myndun svifryks</div>
-                <div class="flex-item-inner item-started">4.3 Upplýsa íbúa um loftmengun</div>
-                <div class="flex-item-inner item-finished">4.4. Bæta umhirðu ganta</div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/4-loftgaedi-og-heilsa/#loftgaedi1" target="_blank">Loftslagsstefna Akureyrarbæjar</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/4-loftgaedi-og-heilsa/#loftgaedi2" target="_blank">Draga úr myndun svifryks</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/4-loftgaedi-og-heilsa/#loftgaedi3" target="_blank">Upplýsa íbúa um loftmengun</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/4-loftgaedi-og-heilsa/#loftgaedi4" target="_blank">Bæta umhirðu gatna</a></div>
         </div>
     </div>
 </div>
 
 <div class="flex-container">
-    <div class="flex-item chapter-title">5. Græn svæði &amp; náttúra</div>
+    <div class="flex-item chapter-title">Græn svæði &amp; náttúra</div>
     <div class="flex-item">
         <div class="flex-container-inner">
-                <div class="flex-item-inner item-prepared">5.1. Endurheimt votlendis</div>
-                <div class="flex-item-inner item-finished">5.2 Ágengar plöntur og plöntur á bannlista</div>
-                <div class="flex-item-inner item-prepared">5.3 Sérstakt landslag</div>
-                <div class="flex-item-inner item-prepared">5.4 Viðhalda líffræðilegum fjölbreytileika</div>
-                <div class="flex-item-inner item-finished">5.5 Fræðsluskilti við áhugaverða náttúru</div>
-                <div class="flex-item-inner item-finished">5.6 Efling útivistarsvæða</div>
-                <div class="flex-item-inner item-started">5.7 Efling matjurtagarða</div>
-                <div class="flex-item-inner item-started">5.8 Grænt Ráðhústorg</div>
-                <div class="flex-item-inner item-started">5.9 Græni trefillinn</div>
-                <div class="flex-item-inner item-prepared">5.10 Trjáverndarstefna</div>
-                <div class="flex-item-inner item-finished">5.11 Fuglatalning</div>
-                <div class="flex-item-inner item-started">5.12 Strandsvæði og fjörur</div>
-                <div class="flex-item-inner item-started">5.13 Dýrahald</div>
-                <div class="flex-item-inner item-finished">5.14 Fráveita</div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen1" target="_blank">Endurheimt votlendis</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen2" target="_blank">Ágengar plöntur og plöntur á bannlista</a></div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen3" target="_blank">Sérstætt landslag</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen4" target="_blank">Fræðsluskilti við áhugaverða náttúru</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen5" target="_blank">Efling útivistarsvæða</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen6" target="_blank">Matjurtagarðar Akureyrar</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen7" target="_blank">Græni trefillinn</a></div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen8" target="_blank">Trjáverndarstefna</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen9" target="_blank">Fuglatalning</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen10" target="_blank">Strandsvæði og fjörur</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/5-graen-svaedi-og-nattura/#graen11" target="_blank">Fráveita</a></div>
         </div>
     </div>
 </div>
 
 <div class="flex-container">
-    <div class="flex-item chapter-title">6. Umgengni &amp; stjórnsýsla</div>
+    <div class="flex-item chapter-title">Umgengni &amp; stjórnsýsla</div>
     <div class="flex-item">
         <div class="flex-container-inner">
-                <div class="flex-item-inner item-prepared">6.1 Svæðisborg - Fyrirmynd</div>
-                <div class="flex-item-inner item-prepared">6.2 Stjórnendaþekking</div>
-                <div class="flex-item-inner item-finished">6.3 Þátttaka í Grænum skrefum</div>
-                <div class="flex-item-inner item-prepared">6.4 Umhverfi tímafrekra verkefna</div>
-                <div class="flex-item-inner item-finished">6.5 Orðspor</div>
-                <div class="flex-item-inner item-finished">6.6 Draga úr ljósmengun</div>
-                <div class="flex-item-inner item-finished">6.7 Draga úr rusli á almannafæri</div>
-                <div class="flex-item-inner item-started">6.8 Menningarsögulega minjar</div>
-                <div class="flex-item-inner item-started">6.9 Umgengi á lóðum í bæjarlandinu</div>
-                <div class="flex-item-inner item-finished">6.10 Aðlögun að áhrifum loftslagsbreytinga</div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/6-umhverfi-og-skipulag/#umhverfi1" target="_blank">Svæðisborg</a></div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/6-umhverfi-og-skipulag/#umhverfi2" target="_blank">Stjórnendaþekking</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/6-umhverfi-og-skipulag/#umhverfi3" target="_blank">Græn skref</a></div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/6-umhverfi-og-skipulag/#umhverfi4" target="_blank">Umhverfi tímafrekra verkefna</a></div>
+                <div class="flex-item-inner item-prepared"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/6-umhverfi-og-skipulag/#umhverfi5" target="_blank">Geymslusvæði og gámar</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/6-umhverfi-og-skipulag/#umhverfi6" target="_blank">Ljósmengun</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/6-umhverfi-og-skipulag/#umhverfi7" target="_blank">Rusl á almannafæri</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/6-umhverfi-og-skipulag/#umhverfi8" target="_blank">Menningarsögulegar minjar</a></div>
+                <div class="flex-item-inner item-started"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/6-umhverfi-og-skipulag/#umhverfi9" target="_blank">Umgengi í bæjarlandinu</a></div>
+                <div class="flex-item-inner item-finished"><a href="https://www.akureyri.is/is/thjonusta/umhverfismal/loftslagsmal/adgerdaraaetlun-akureyrarbaejar-i-umhverfis-og-loftlagsmalum/6-umhverfi-og-skipulag/#umhverfi10" target="_blank">Aðlögun að áhrifum loftslagsbreytinga</a></div>
         </div>
     </div>
 </div>
-
+</div>
 </body>
 </html>
